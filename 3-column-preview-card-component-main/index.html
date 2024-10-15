@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Frontend Mentor | 3-column preview card component</title>
+    <style>
+
+        /* Custom Styles */
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: hsl(0, 0%, 95%);
+            color: hsl(179, 100%, 13%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1440px;
+        }
+
+        .card {
+            text-align: center;
+            border-radius: 10px;
+            padding: 30px;
+            color: white;
+        }
+
+        .card h2 {
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: hsla(0, 0%, 100%, 0.75);
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            color: white;
+            border: 2px solid white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+
+        .btn-custom:hover {
+            background-color: hsla(0, 0%, 100%, 0.2);
+        }
+
+        /* Column backgrounds */
+        .sedan {
+            background-color: hsl(31, 77%, 52%);
+        }
+
+        .suv {
+            background-color: hsl(184, 100%, 22%);
+        }
+
+        .luxury {
+            background-color: hsl(179, 100%, 13%);
+        }
+
+        .card img {
+            margin-bottom: 30px;
+            width: 120px;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .card h2 {
+                font-size: 36px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Sedan card -->
+            <div class="col-lg-4 mb-4">
+                <div class="card sedan h-100">
+                    <img src="./images/icon-sedans.svg" alt="Sedan Icon">
+                    <h2>SEDANS</h2>
+                    <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                    <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+            </div>
+
+            <!-- SUV card -->
+            <div class="col-lg-4 mb-4">
+                <div class="card suv h-100">
+                    <img src="./images/icon-suvs.svg" alt="SUV Icon">
+                    <h2>SUVS</h2>
+                    <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+                    <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Luxury card -->
+            <div class="col-lg-4 mb-4">
+                <div class="card luxury h-100">
+                    <img src="./images/icon-luxury.svg" alt="Luxury Icon">
+                    <h2>LUXURY</h2>
+                    <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+                    <a href="#" class="btn btn-custom">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="attribution text-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+</body>
+
+</html>
